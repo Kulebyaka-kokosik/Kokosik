@@ -1,3 +1,6 @@
-"# hello world"
-print('hello world')
-print('Hi')
+# hello %username%
+import sys
+
+who = 'world' if len(sys.argv) < 2 else sys.argv[1]
+print('Hello %s'% who)
+
